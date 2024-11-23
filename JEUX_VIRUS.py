@@ -77,7 +77,7 @@ class RamasseTout:
             data['pioche'].remove(carte)
             cartes_choisies[joueur] = carte
 
-        # Trier les joueurs par ordre de leurs cartes choisies
+
         for joueur, carte in sorted(cartes_choisies.items(), key=lambda x: x[1]):
             print(f"{joueur} joue la carte {carte}.")
             self.jouer_carte(joueur, carte)
@@ -114,7 +114,7 @@ class RamasseTout:
             self.distribution()
 
 
-# Exemple d'utilisation
+
 joueurs = ["Joueur1", "Joueur2", "Joueur3", "Joueur4"]
 jeu = RamasseTout(joueurs)
 jeu.jouer()
